@@ -1,0 +1,504 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title>Calculator</title>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous"> 
+  
+  <link rel="shortcut icon" type="image/x-icon" href="#">
+  <link rel="stylesheet" type="text/css" href="css/style.css" media="all" />
+
+</head>
+<body>
+	
+<!-------------- navbar header ------------------>
+<nav id="vbar" class="navbar bg-primary navbar-light navbar-expand-md">
+<div class="container"> 
+		<a class="navbar-brand" href="#Home">Calculator </a>		
+	<button class="navbar-toggler" data-toggle="collapse" data-target="#navbar-item" > <span class="navbar-toggler-icon" > </span></button>
+	<div class="collapse navbar-collapse" id="navbar-item"> 	
+		<ul class="navbar-nav ml-auto"> 
+	<li class="nav-item">
+		<a class="nav-link" href="#Home">Home</a>
+	</li>
+	<li class="nav-item">
+		<a class="nav-link" href="#About">Tables</a>
+	</li>
+	<li class="nav-item">
+		<a class="nav-link" href="#Team">Items</a>
+	</li>
+	<li class="nav-item">
+		<a class="nav-link" href="#Contact">Activity</a>
+	</li>
+	<li class="nav-item"> 
+		<a class="nav-link" href="#Contact">Tour</a>
+	</li>
+	<li class="nav-item"> 
+		<input class="form-control-sm" type="text" placeholder="Search ">
+		
+	</li>
+	<li class="nav-item"> 
+		<input type="submit" class="form-control-sm btn btn-outline-danger">
+	</li>
+</ul>
+	</div>
+</div>
+</nav>
+
+<!------------------------------------>
+<section> 
+	<div class="container my-5"> 
+		<div class="row"> 
+			<div class="col-md-3"> 
+				<div class="FullBox"> 
+					<h3 class="text-center bg-success"> All Converter</h3>	
+				<ul class="navbar-nav"> 
+					<li class="nav-item box">  
+						<a class="nav-link ml-4 " href="#"><h6> Unite</h6> </a>
+					</li>
+					<li class="nav-item box"> 
+						<a class="nav-link ml-4" data-toggle="collapse" href="#Length"><h6> Length</h6> </a>
+					</li>
+					<li class="nav-item box"> 
+						<a class="nav-link ml-4" data-toggle="collapse" href="#weight"><h6> weight</h6> </a>
+					</li>
+					<li class="nav-item box"> 
+						<a class="nav-link ml-4" data-toggle="collapse" href="#Currency"><h6> Currency</h6> </a>
+					</li>
+					<li class="nav-item box"> 
+						<a class="nav-link ml-4" data-toggle="collapse" href="#"><h6> Mass</h6> </a>
+					</li>
+					<li class="nav-item box"> 
+						<a class="nav-link ml-4" data-toggle="collapse" href="#"><h6> Liquid</h6> </a>
+					</li>
+					<li class="nav-item box"> 
+						<a class="nav-link ml-4" data-toggle="collapse" href="#Volume"><h6> Volume</h6> </a>
+					</li>
+					<li class="nav-item box"> 
+						<a class="nav-link ml-4" data-toggle="collapse" href="#"><h6> Distance</h6> </a>
+					</li>
+					<li class="nav-item box"> 
+						<a class="nav-link ml-4" data-toggle="collapse"  href="#Area"><h6> Area</h6> </a>
+					</li>
+					<li class="nav-item box"> 
+						<a class="nav-link ml-4" data-toggle="collapse" href="#"><h6> Speed</h6> </a>
+					</li>
+					<li class="nav-item box"> 
+						<a class="nav-link ml-4" data-toggle="collapse" href="#Temputure"><h6> Temputure</h6> </a>
+					</li>
+					<li class="nav-item box"> 
+						<a class="nav-link ml-4" data-toggle="collapse" href="#Time"><h6> Time</h6> </a>
+					</li>
+				
+				</ul>
+				</div>
+			</div>
+			<div class="col-md-7 mt-5"> 
+				<div id="mainBox" style="background-color: #eee;"> 
+					<table class="table table-bordered">
+						<thead>
+						  <tr>
+							<th class="text-center" scope="col"><strong>Form</strong> </th>
+							<th class="text-center" scope="col"> <strong> To</strong> </th>
+							
+						  </tr>
+						</thead>
+						<tbody>
+						  <tr>
+							<td><input class="form-control" type="text"></td>
+							<td><input class="form-control" type="text"></td>
+						
+						  </tr>
+						  <tr>
+							<div id="accordion" role="tablist"> 
+							<td> 
+								
+								<!--Length Calculator Details-->
+								 
+								<select name="calFrom" id="Length" size="11" class=" ucselect collapse " style="width:100%;">
+									<option value="1">Meter</option>
+									<option value="2">Kilometer</option>
+									<option value="3">Centimeter</option>
+									<option value="4">Millimeter</option>
+									<option value="5">Micrometer</option>
+									<option value="6">Nanometer</option>
+									<option value="7">Mile</option>
+									<option value="8">Yard</option>
+									<option value="9">Foot</option>
+									<option value="10">Inch</option>
+									<option value="11">Light Year</option>
+								</select>
+						
+
+								<!--Weight Calculator Details-->
+								<select name="calFrom" id="weight" class=" ucselect collapse" size="11" style="width:100%;">
+									<option value="1">Kilogram</option>
+									<option value="2">Gram</option>
+									<option value="3">Milligram</option>
+									<option value="4">Metric Ton</option>
+									<option value="5">Long Ton</option>
+									<option value="6">Short Ton</option>
+									<option value="7">Pound</option>
+									<option value="8">Ounce</option>
+									<option value="9">Carrat</option>
+									<option value="10">Atomic Mass Unit</option>
+								</select>
+								<!--Currency Calculator Details-->
+								<select id="Currency" class="collapse ucselect" size="11" style="width: 100%;">
+									<option>Australian Dollar [A$]</option>
+									<option>British Pound Sterling [£]</option>
+									<option>Bulgarian lev [лв]</option>
+									<option>Canadian Dollar [CA$]</option>
+									<option>Chinese yuan renminbi [CN¥]</option>
+									<option>Croatian kuna [kn]</option>
+									<option>Czech koruna [Kč]</option>
+									<option>Danish Krone [kr]</option>
+									<option>Euro [€]</option>
+									<option>Hong Kong Dollar [HK$]</option>
+									<option>Hungarian forint [Ft]</option>
+									<option>Icelandic krona [Íkr]</option>
+									<option>Indian Rupee [Rs.]</option>
+									<option>Indonesian rupiah [Rp]</option>
+									<option>Israeli shekel [₪]</option>
+									<option>Japanese Yen [¥]</option>
+									<option>Malaysian Ringgit [MYR]</option>
+									<option>Mexican Peso [MX$]</option>
+									<option>New Zealand Dollar [NZ$]</option>
+									<option>Norwegian Krone [NOK]</option>
+									<option>Philippine Peso [₱]</option>
+									<option>Polish Zloty [PLN]</option>
+									<option>Romanian leu [RON]</option>
+									<option>Russian Ruble [RUB]</option>
+									<option>Singapore Dollar [$]</option>
+									<option>South African Rand [ZAR]</option>
+									<option>South Korean Won [₩]</option>
+									<option>Swedish Krona [kr]</option>
+									<option>Swiss Franc [CHF]</option>
+									<option>Thai Baht [฿]</option>
+									<option>Turkish Lira [TRY]</option>
+									<option>United States Dollar [$]</option>
+								</select>
+
+									<!--Temputure Calculator Details-->
+								<select name="calFrom" id="Temputure" class="ucselect collapse" size="11" style="width:100%;">
+									<option value="1">Celsius</option>
+									<option value="2">Kelvin</option>
+									<option value="3">Fahrenheit</option>
+								</select>
+
+								<!--Volume Calculator Details-->
+								<select name="calFrom" id="Volume" size="11" class="ucselect collapse" style="width:100%;">
+									<option value="1">Cubic Meter</option>
+									<option value="2">Cubic Kilometer</option>
+									<option value="3">Cubic Centimeter</option>
+									<option value="4">Cubic Millimeter</option>
+									<option value="5">Liter</option>
+									<option value="6">Milliliter</option>
+									<option value="7">US Gallon</option>
+									<option value="8">US Quart</option>
+									<option value="9">US Pint</option>
+									<option value="10">US Cup</option>
+									<option value="11">US Fluid Ounce</option>
+									<option value="12">US Table Spoon</option>
+									<option value="13">US Tea Spoon</option>
+									<option value="14">Imperial Gallon</option>
+									<option value="15">Imperial Quart</option>
+									<option value="16">Imperial Pint</option>
+									<option value="17">Imperial Fluid Ounce</option>
+									<option value="18">Imperial Table Spoon</option>
+									<option value="19">Imperial Tea Spoon</option>
+									<option value="20">Cubic Mile</option>
+									<option value="21">Cubic Yard</option>
+									<option value="22">Cubic Foot</option>
+									<option value="23">Cubic Inch</option>
+								</select>
+								<!--Area Calculator Details-->
+								<select name="calFrom" id="Area"  size="11" class="ucselect collapse" style="width:100%;">
+									<option value="1">Square Meter</option>
+									<option value="2">Square Kilometer</option>
+									<option value="3">Square Centimeter</option>
+									<option value="4">Square Millimeter</option>
+									<option value="5">Square Micrometer</option>
+									<option value="6">Hectare</option>
+									<option value="7">Square Mile</option>
+									<option value="8">Square Yard</option>
+									<option value="9">Square Foot</option>
+									<option value="10">Square Inch</option>
+									<option value="11">Acre</option>
+								</select>
+								<!--Time Calculator Details-->
+								<select name="calFrom" id="Time" size="11" class="ucselect collapse" style="width:100%;">
+									<option value="1">Second</option>
+									<option value="2">Millisecond</option>
+									<option value="3">Microsecond</option>
+									<option value="4">Nanosecond</option>
+									<option value="5">Picosecond</option>
+									<option value="6">Minute</option>
+									<option value="7">Hour</option>
+									<option value="8">Day</option>
+									<option value="9">Week</option>
+									<option value="10">Month</option>
+									<option value="11">Year</option>
+								</select>
+							</td>
+				<!------------------------------------------------------------------>
+							<td>
+								<!--Length Calculator 2nd Details-->
+								
+								<select name="calTo" id="Length" size="11" class="ucselect collapse" style="width:100%;">
+									<option value="1">Meter (20)</option>
+									<option value="2">Kilometer (0.02)</option>
+									<option value="3">Centimeter (2000)</option>
+									<option value="4">Millimeter (20000)</option>
+									<option value="5">Micrometer (20000000)</option>
+									<option value="6">Nanometer (20000000000)</option>
+									<option value="7">Mile (0.0124273775)</option>
+									<option value="8">Yard (21.872265967)</option>
+									<option value="9">Foot (65.6167979)</option>
+									<option value="10">Inch (787.4015748)</option>
+									<option value="11">Light Year (2.114017415E-15)</option>
+								</select>
+						
+
+								<!--Weight Calculator 2nd Details-->
+								<select name="calFrom" id="weight" class="ucselect collapse" size="11" style="width:100%;">
+									<option value="1">Kilogram</option>
+									<option value="2">Gram</option>
+									<option value="3">Milligram</option>
+									<option value="4">Metric Ton</option>
+									<option value="5">Long Ton</option>
+									<option value="6">Short Ton</option>
+									<option value="7">Pound</option>
+									<option value="8">Ounce</option>
+									<option value="9">Carrat</option>
+									<option value="10">Atomic Mass Unit</option>
+								</select>
+
+									<!--Currency Calculator Details-->
+									<select id="Currency" class="collapse ucselect" size="11" style="width: 100%;">
+										<option>Australian Dollar [A$]</option>
+										<option>British Pound Sterling [£]</option>
+										<option>Bulgarian lev [лв]</option>
+										<option>Canadian Dollar [CA$]</option>
+										<option>Chinese yuan renminbi [CN¥]</option>
+										<option>Croatian kuna [kn]</option>
+										<option>Czech koruna [Kč]</option>
+										<option>Danish Krone [kr]</option>
+										<option>Euro [€]</option>
+										<option>Hong Kong Dollar [HK$]</option>
+										<option>Hungarian forint [Ft]</option>
+										<option>Icelandic krona [Íkr]</option>
+										<option>Indian Rupee [Rs.]</option>
+										<option>Indonesian rupiah [Rp]</option>
+										<option>Israeli shekel [₪]</option>
+										<option>Japanese Yen [¥]</option>
+										<option>Malaysian Ringgit [MYR]</option>
+										<option>Mexican Peso [MX$]</option>
+										<option>New Zealand Dollar [NZ$]</option>
+										<option>Norwegian Krone [NOK]</option>
+										<option>Philippine Peso [₱]</option>
+										<option>Polish Zloty [PLN]</option>
+										<option>Romanian leu [RON]</option>
+										<option>Russian Ruble [RUB]</option>
+										<option>Singapore Dollar [$]</option>
+										<option>South African Rand [ZAR]</option>
+										<option>South Korean Won [₩]</option>
+										<option>Swedish Krona [kr]</option>
+										<option>Swiss Franc [CHF]</option>
+										<option>Thai Baht [฿]</option>
+										<option>Turkish Lira [TRY]</option>
+										<option>United States Dollar [$]</option>
+									</select>
+
+								<!--Temputure Calculator  2nd Details-->
+								<select name="calTo" id="Temputure" size="11" class="ucselect collapse" style="width:100%;">
+									<option value="1">Celsius (20)</option>
+									<option value="2">Kelvin (293.15)</option>
+									<option value="3">Fahrenheit (68)</option>
+								</select>
+
+									<!--Volume Calculator 2nd Details-->
+									<select name="calFrom" id="Volume"  size="11" class="ucselect collapse" style="width:100%;">
+										<option value="1">Square Meter</option>
+										<option value="2">Square Kilometer</option>
+										<option value="3">Square Centimeter</option>
+										<option value="4">Square Millimeter</option>
+										<option value="5">Square Micrometer</option>
+										<option value="6">Hectare</option>
+										<option value="7">Square Mile</option>
+										<option value="8">Square Yard</option>
+										<option value="9">Square Foot</option>
+										<option value="10">Square Inch</option>
+										<option value="11">Acre</option>
+									</select>
+
+									<!--Area Calculator 2nd Details-->
+								<select name="calTo" id="Area" size="11"  class="ucselect  collapse " style="width:100%;">
+									<option value="1">Square Meter (1)</option>
+									<option value="2">Square Kilometer (0.000001)</option>
+									<option value="3">Square Centimeter (10000)</option>
+									<option value="4">Square Millimeter (1000000)</option>
+									<option value="5">Square Micrometer (1000000000000)</option>
+									<option value="6">Hectare (0.0001)</option>
+									<option value="7">Square Mile (3.861018768E-7)</option>
+									<option value="8">Square Yard (1.1959900463)</option>
+									<option value="9">Square Foot (10.763910417)</option>
+									<option value="10">Square Inch (1550.0031)</option>
+									<option value="11">Acre (0.0002471054)</option>
+								</select>
+
+								<!--Time Calculator 2nd Details-->
+								<select name="calTo" id="Time" size="11" class="ucselect  collapse  " style="width:100%;">
+									<option value="1">Second (1)</option>
+									<option value="2">Millisecond (1000)</option>
+									<option value="3">Microsecond (1000000)</option>
+									<option value="4">Nanosecond (1000000000)</option>
+									<option value="5">Picosecond (1000000000000)</option>
+									<option value="6">Minute (0.0166666667)</option>
+									<option value="7">Hour (0.0002777778)</option>
+									<option value="8">Day (0.0000115741)</option>
+									<option value="9">Week (0.0000016534)</option>
+									<option value="10">Month (3.802570537E-7)</option>
+									<option value="11">Year (3.168808781E-8)</option>
+								</select>
+							</td>
+						</div>
+						  </tr>
+						</tbody>
+					  </table>
+				</div>
+
+			</div>
+			<div class="col-md-2 mt-5"> 
+				
+				<div class="card" style="width: 100%;">
+					<div class="card-body">
+					  <h5 class="card-title">Others Converter</h5>
+					  <a href="#" class="card-link">Age</a>
+					  <a href="#" class="card-link">Time</a>
+					  <a href="#" class="card-link">Date</a>
+					  <a href="#" class="card-link">Height</a>
+					  <a href="#" class="card-link">Hours</a>
+					  <a href="#" class="card-link">Grade</a>
+					</div>
+				  </div>
+
+
+			</div>
+		</div>
+	</div>
+
+</section>
+
+<section id="artical-part"> 
+	<div class="container"> 
+		<div class="row"> 
+			<div class="col-md-12"> 
+				<h4> Unit Converter Express Version</h4>
+				<p class="lead"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis quasi culpa reprehenderit vel unde reiciendis dignissimos aspernatur consequuntur, dolore beatae recusandae ducimus dolorum molestias eum perspiciatis commodi ipsum. Tempore, dolores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, aliquam tempora. Perspiciatis nesciunt dolores architecto est aliquid odio cum ut, modi quia delectus illum excepturi corrupti nulla cumque vel assumenda!</p>
+			</div>
+			<div class="col-md-12"> 
+				<h4> Unit Converter Express Version</h4>
+				<p class="lead"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis quasi culpa reprehenderit vel unde reiciendis dignissimos aspernatur consequuntur, dolore beatae recusandae ducimus dolorum molestias eum perspiciatis commodi ipsum. Tempore, dolores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, aliquam tempora. Perspiciatis nesciunt dolores architecto est aliquid odio cum ut, modi quia delectus illum excepturi corrupti nulla cumque vel assumenda!</p>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+
+
+
+<!-- Contact Section Start  -->
+<section id="Contact" class="text-light pb-5"> 
+	<div class="container"> 
+		<div class="row py-4"> 
+			<div class="col-md-5 py-3">
+				<h4 style="
+				padding: 11px;"><strong>  Converter</strong></h4>
+				<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit in, sit, illo distinctio dicta nihil sapiente, sint facere nam quae expedita deleniti voluptatum aut saepe quia minus! Culpa, id tempora.</p>
+				<br>
+				<div class="follow_us">
+					<ul class="socialIcon">
+						<li>Follow us</li>
+						<li class="icons"><img src="img/fb-icon.png" alt=""></li>
+						<li class="icons"><img src="img/tw.png" alt=""></li>
+						<li class="icons"><img src="img/g+.png" alt=""></li>
+						<li class="icons"><img src="img/p+.png" alt=""></li>
+						
+					</ul>
+				</div>
+				</div>
+				<div class="col-md-3 py-3"> 
+				<h5>Useful links</h5>
+					<ul class="links text-light">
+						<li><a class="text-light" href="#">About</a></li>
+						<li><a class="text-light" href="#">Login</a></li>
+						<li><a class="text-light" href="#">Register</a></li>
+						<li><a class="text-light" href="#">News &amp; Events</a></li>
+						<li><a class="text-light" href="#">Contacts</a></li>
+					</ul>
+				</div>
+			
+			<div class="col-md-4 py-3"> 
+				
+				<h5>Contact with Us</h5>
+					<ul class="contactes">
+						<li><a class="text-light" href="#"> + 61 23 8093 3400</a></li>
+						<li><a class="text-light" href="#"> info@Companyname.com</a></li>
+					</ul>
+					<div id="newsletter">
+					<h6>Newsletter</h6>
+					<div id="message-newsletter"></div>
+					<form method="post" action="#" name="newsletter_form" id="newsletter_form">
+						<div class="form-group">
+							<input type="email" name="email_newsletter" id="email_newsletter" class="form-control-sm" placeholder="Your email">
+							<input type="submit" class="form-control-sm" value="Submit" id="submit-newsletter">
+						</div>
+					</form>
+					</div>
+				
+				
+
+		</div>
+	</div>
+	 
+
+
+</div>
+</section>
+<footer id="footer" class="pt-3 bg-warning text-light">
+	<div class="container"> 
+		<div class="row"> 
+
+			<div class="col-12"> 
+				<p><a href="#"> Terms and conditions | Privacy</a></p>
+			</div>
+		</div>
+	</div>
+</footer> 
+<!-- ---------------------------------------------- -->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+
+<script> 
+
+</script>
+
+ 
+
+
+  
+
+
+</body>
+</html>
+ 
+
+
+
